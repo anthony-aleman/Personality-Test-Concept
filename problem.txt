@@ -1,0 +1,43 @@
+Given an array of 25 Responses with possible responses being
+'A', 'B', 'C', 'D', or 'E' generate 8 scores with their 
+corresponding dimension of wellness. 
+
+Personality test problem. I created 25 questions for a group of
+people likely experiencing some form of AUHDHD/Autism/ADHD. 
+Each question has a relation of some form to the 8 dimensions of wellness. 
+Many of the users would likely experience similar problems but have different
+goals or different preferences on how they want to achieve their goals. 
+
+To determine the score for each question response I will assign points to each 
+response 'A': 4, 'B': 3, 'C': 2, 'D': 1, 'E': 0.5
+
+Each question will have stronger relations to certain 
+areas of wellness, but most questions have overlapping areas. To factor
+this in to the calculation I will create a modifier that will differ based
+on the extent it relates to the corresponding dimension
+
+For Example: 
+
+How frequently do you find yourself overwhelmed by tasks or responsibilities?
+A) Daily
+B) Weekly
+C) Monthly
+D) Rarely
+E) Never
+
+This question relates to all of the dimensions of wellness. This would mean
+that each dimension would apply here but to say perhaps in a young working class persons
+life Social, Occupational, Financial, and Intellectual would most likely apply. 
+Each related dimension would have a corresponding weighted modifier indicating, 
+High (x1.75), Med (x1.5), Low (x1.1) significance
+So lets say for every dimension we apply the Low modifier except for the 4 stated
+where we instead apply a High modifier visually that looks like this
+
+Spiritual x 1.1
+Physical x 1.1
+Occupational x 1.75
+Social x 1.75
+Financial x 1.75
+Environmental x 1.1
+Intellectual x 1.75
+Emotional x 1.1
